@@ -1,0 +1,55 @@
+#contact-head-underline-text {
+  margin-bottom: 50px;
+}
+
+#form-contact {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 68px;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.input-item.contact {
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.input-item.contact:last-child {
+  margin-bottom: 10px;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-bottom: 10px;
+}
+
+#contact-page-textarea {
+  height: 100%;
+  border-bottom: 1px solid rgba(189, 189, 189, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  resize: both;
+  text-align: top left;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.my_button {
+  margin: 0 auto;
+  display: block;
+}
+
+#my_contact-button {
+  border: none;
+  line-height: 42px;
+  width: 166px;
+}

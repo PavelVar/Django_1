@@ -1,0 +1,31 @@
+{% extends 'main/templ.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="features">
+  <h1>{{ page_name }}</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda deserunt exercitationem nisi qui velit.</p>
+  <button class="btn btn-primary">Go to ...</button>
+
+  {% if news %}
+    {% for el in news %}
+      <div class="alert alert-primary">
+        <h3>{{ el.title }}</h3>
+        <p>{{ el.anons }}</p>
+        <div id="read-btn-div">
+          <a href="{% url 'news-detail' el.id %}" >
+            <button class="btn btn-warning">
+            <i class="fa-solid fa-book-open-reader"></i> Read
+            </button>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No articles in DB</p>
+  {% endif %}
+
+</div>
+{% endblock %}
+

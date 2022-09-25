@@ -1,0 +1,16 @@
+{% extends 'main/templ.html' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+<div class="features">
+  <h1>{{ article.title }}</h1>
+  <p>{{ article.date }}</p>
+  <p>{{ article.full_text }}</p>
+  <div id="btn-upd">
+    <a href="{% url 'news-update' article.id %}" class="btn btn-warning">Update</a>
+    <a href="{% url 'news-del' article.id %}" class="btn btn-danger">Delete</a>
+  </div>
+
+</div>
+{% endblock %}

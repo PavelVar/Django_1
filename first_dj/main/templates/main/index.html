@@ -1,0 +1,24 @@
+{% extends 'main/templ.html' %}
+
+{% block title %}{{ page_name }}{% endblock %}
+
+{% block content %}
+<div class="features">
+  <h1>{{ title }}</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda deserunt exercitationem nisi qui velit.</p>
+  <button class="btn btn-primary">Go to about</button>
+
+  {% for element in values %}
+    <p>{{ element | upper }}</p>
+  {% endfor %}
+
+  {% for element in my_dict %}
+    {% if element == 'param_1' %}
+      {% filter upper %}
+        <p>{{ element }} : {{ my_dict.element }}</p>
+      {% endfilter %}
+    {% endif %}
+  {% endfor %}
+</div>
+{% endblock %}
+

@@ -1,0 +1,20 @@
+{% extends 'main/templ.html' %}
+
+{% block title %}Delete page{% endblock %}
+
+{% block content %}
+<div class="create-article">
+  <h1 class="create-article">Delete article</h1>
+  <form method="post">
+    {% csrf_token %}
+    <div id="btn-delete">
+      <a href="{% url 'news_home' %}" class="btn btn-success">No</a>
+      <button class="btn btn-danger" type="submit" >Delete</button>
+    </div>
+  </form>
+
+
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,113 @@
+body {background: rgb(235, 230, 230);}
+
+.wrap {display: flex;}
+
+aside {
+
+  background: rgb(255, 229, 229);
+  width: 20%;
+  padding: 2.5%;
+  height: 100vh;
+  color: #fff;
+  border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 160px;
+}
+
+aside h3 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+
+ }
+
+aside ul li{
+  margin-bottom: 10px;
+  color: black;
+  transition: transform 0.5s;
+ }
+
+aside ul li:hover, aside ul a:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.features {
+  padding: 20px;
+  text-align: center;
+}
+
+.features h1{
+
+  margin: 100px 0 30px 0;
+}
+
+.features p{
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.btn-primary {
+  margin-top: 20px;
+}
+
+.btn-info {
+  margin-top: 20px;
+}
+
+#menu-btn {
+ margin-top: 0px;
+ }
+
+.alert-primary {
+  margin-top: 20px;
+
+}
+
+main {
+  width: 80%;
+  padding: 20px;
+}
+
+h1.create-article {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form.create-article {
+  width: 60%;
+  margin: auto;
+}
+
+#add-article-btn {
+  margin: auto;
+  text-align: center;
+}
+
+#add-article-btn .btn-primary {
+  margin-top: 0px;
+}
+
+#read-btn-div {
+  margin-top: 10px;
+}
+
+#btn-upd {
+  margin-top: 10px;
+}
+
+#btn-delete {
+  text-align: center;
+  margin-top: 20px;
+}

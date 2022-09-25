@@ -1,0 +1,55 @@
+.section {
+  padding: 50px 20px;
+}
+
+.heading__title {
+  font-size: 2.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Raleway", "Trebuchet MS";
+}
+
+.heading__line {
+  text-align: center;
+}
+
+.heading__underline-text p {
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(134, 135, 139, 1);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.input-item {
+  border-bottom: 1px solid rgba(189, 189, 189, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: rgba(189, 189, 189, 1);
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.my_button {
+  background-color: rgba(236, 121, 121, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.my_button:hover {
+  transform: scale(1.15);
+  border-radius: 8px;
+  box-shadow: 0 0 55px rgba(236, 121, 121, 1);
+}
+
+.input-label {
+  margin-bottom: 2px;
+}
