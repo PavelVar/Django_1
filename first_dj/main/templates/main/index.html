@@ -6,7 +6,7 @@
 <div class="features">
   <h1>{{ title }}</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda deserunt exercitationem nisi qui velit.</p>
-  <button class="btn btn-primary">Go to about</button>
+  <a href="{% url 'about_page' %}"><button class="btn btn-primary">Go to about</button></a>
 
   {% for element in values %}
     <p>{{ element | upper }}</p>

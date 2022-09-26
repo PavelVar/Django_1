@@ -6,7 +6,7 @@
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: space-around;
-  margin-bottom: 68px;
+  margin-bottom: 40px;
 }
 
 .form-left {
@@ -52,4 +52,12 @@
   border: none;
   line-height: 42px;
   width: 166px;
+}
+
+.input-label {
+  margin-top: 20px;
+}
+
+.input-place-email {
+  margin-bottom: 30px;
 }
